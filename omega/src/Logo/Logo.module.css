@@ -1,0 +1,16 @@
+.logo {
+    cursor: pointer;
+    border: none;
+    background: none;
+    font-family: 'Poppins';
+    font-weight: 900;
+    font-size: 30px;
+    color: #1FE8D3;
+    display: flex;
+}
+
+.logo p {
+    font-family: 'Poppins';
+    font-weight: 400;
+    color: #060640;
+}
