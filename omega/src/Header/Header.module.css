@@ -1,0 +1,99 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 1170px;
+}
+
+.logo {
+    justify-self: flex-start;
+    margin: 0 35px;
+    user-select: none;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    justify-self: center;
+    display: flex;
+    width: 450px;
+    gap: 25px;
+}
+
+.btn {
+    font-size: 14px;
+    color: #828297;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #00E5CC;
+}
+
+.active {
+    font-size: 14px;
+    color: #00E5CC;
+    border: none;
+    background-color: transparent;
+}
+
+.rightBtns {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin: 22px;
+    flex-shrink: 1;
+}
+
+.authorization {
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.demoversion {
+    border: none;
+    border-radius: 6px;
+    background-color: #060640;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 18px 16px;
+    cursor: pointer;
+}
+
+.burger {
+    width: 30px;
+    margin-right: 30px;
+    justify-self: flex-end;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .header {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .btn, .active, .rightBtns, .nav {
+        transition: 0.2s;
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+}

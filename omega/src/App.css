@@ -1,0 +1,262 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/open-sans-v28-latin_cyrillic-regular.woff2")
+  format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/open-sans-v28-latin_cyrillic-600.woff2")
+  format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/open-sans-v28-latin_cyrillic-800.woff2")
+  format("woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("./fonts/poppins-v20-latin-regular.woff2")
+  format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("./fonts/poppins-v20-latin-900.woff2")
+  format("woff2");
+  font-weight: 900;
+  font-style: normal;
+}
+
+* {
+  margin : 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans';
+  color: #060640;
+}
+
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+::selection {
+  color: #060640;
+  background-color: #00E5CC;
+}
+
+body {
+  background: 
+  url(/src//images/backgroundCircles.svg) 90% 524px no-repeat,
+  #ECF9FF;
+  display: flex;
+  justify-content: center;
+  justify-self: center;
+}
+
+.App {
+  width: 100%;
+  max-width: 1291px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top: 50px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Body {
+  width: 100%;
+  margin-top: 110px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  grid-template-columns: 1fr minmax(300px, 900px);
+}
+
+header {
+  display: flex;
+}
+
+.USP {
+  margin-top: 40px;
+  justify-self: flex-end;
+}
+
+.Arch {
+  position: relative;
+  left: 111px;
+  top: 20px;
+  border-radius: 36px 36px 0 0 ;
+  border: 10px solid #00E5CC;
+  border-bottom: 0px;
+  width: 36px;
+  height: 18px;
+}
+
+.MainText {
+  color: #060640;
+  font-weight: 800;
+  font-size: 44px;
+  line-height: 65px;
+}
+
+.Paragraph {
+  width: 75%;
+  margin-top: 26px;
+  color: #9090A7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.CTA {
+  margin-top: 39px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #060640;
+  border: none;
+  max-width: 220px;
+  height: 60px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.BtnText {
+  margin: 20px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 15px;
+}
+
+.PlayBtn {
+  margin-right: 25px;
+  background-color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+
+.Blocks {
+  max-width: 812px;
+  display: flex;
+  flex-wrap: wrap;
+  user-select: none;
+}
+
+.Listening {
+  max-width: 202px;
+  position: relative;
+  top: -338px;
+  left: -62px;
+}
+
+.Statistics {
+  width: fit-content;
+  position: relative;
+  top: -130px;
+  left: 82px;
+}
+
+.Chat {
+  width: fit-content;
+  position: relative;
+  top: -265px;
+  left: 125px;
+}
+
+@media (max-width: 1126px) {
+  .Body {
+    gap: 10px;
+  }
+  
+  .Listening {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  .Blocks {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+
+  .Chat {
+    opacity: 0;
+  }
+
+  .Statistics {
+    opacity: 0;
+  }
+
+  .Body {
+    background: url(/src//images/backgroundCircles.svg) 90% 524px no-repeat,
+    #ECF9FF;
+  }
+}
+
+@media (max-width: 414px) {
+  .Blocks {
+    display: none;
+  }
+
+  .USP {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .Body {
+    margin-top: 10px;
+  }
+
+  .MainText {
+    font-size: 38px;
+    line-height: 45px;
+  }
+
+  .Paragraph {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .CTA {
+    margin-top: 25px;
+  }
+
+  .Arch {
+    position: relative;
+    top: 10px;
+    left: 90px;
+    height: 12px;
+    width: 24px;
+    border-width: 7px;
+  }
+
+  header {
+    height: 100px;
+    align-items: center;
+  }
+}
